@@ -1,0 +1,103 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    color: #05797C;
+}
+.header-group{
+    padding: 10px 30px 40px 30px;
+    min-width: 400px;
+}
+.btn-up{
+    width: 120px;
+    height: 40px;
+    margin-top: 10px;
+    float: right;
+    background: #FFFFFF;
+    border: 1px solid #05797C;
+    border-radius: 20px;
+    color: #05797C;
+}
+.logo img{
+    height: 60px;
+}
+.logo{
+    height: 60px;
+}
+#image{
+    float: left;
+}
+#entreprise{
+    margin-left: 70px;
+    width: fit-content;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.form div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 400px;
+    text-align: center;
+    /*border: solid;*/
+}
+
+.input div{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+input{
+    width: 360px;
+    height: 40px;
+    border: solid 1px #05797C;
+    border-radius: 20px;
+    text-align: center;
+    color: #05797C;
+}
+.form{
+    padding: 20px 20px 30px 20px;
+    width: max-content;
+    height: max-content;
+    box-shadow: 0px 0px 20px #05797C;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titre{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.btn-link{
+    border: none;
+    background-color: #FFFFFF;
+    color: #05797C;
+}
+
+.btn-submit{
+    background-color: #05797C;
+    color: #FFFFFF;
+}
+.btn{
+    font-size: 15px;
+}
+
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.check{
+    height: 10px;
+    width: 10px;
+    margin-right: 10px;
+}
