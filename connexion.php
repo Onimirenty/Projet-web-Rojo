@@ -6,12 +6,12 @@
         $PARAM_utilisateur='postgres'; // nom d'utilisateur pour se connecter
         $PARAM_mot_passe='postgres'; // mot de passe de l'utilisateur pour se connecter
         try{
-            $connexion = new PDO('mysql:host='.$PARAM_hote.';port='.$PARAM_port.';dbname='.$PARAM_nom_bd, $PARAM_utilisateur, $PARAM_mot_passe);
-            return $connexion;    
+            $connexion = new PDO('pgsql:host='.$PARAM_hote.';port='.$PARAM_port.';dbname='.$PARAM_nom_bd, $PARAM_utilisateur, $PARAM_mot_passe);
         }
         catch(Exception $e){
             echo 'Erreur: '.$e-> getMessage().'<br/>';
             echo 'N° :'.$e-> getCode();
         }
+        return $connexion;    
     }
 ?>

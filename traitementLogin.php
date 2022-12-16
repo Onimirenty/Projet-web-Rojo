@@ -1,7 +1,22 @@
 <?php
-    $name = $_POST['name'];
+    include("fonction.php");
+
     $email = $_POST['email'];
-    $tel = $_POST['tel'];
-    $mdp1 = $_POST['mdp1'];
-    $mdp2 = $_POST['mdp2'];
+    $mdp = $_POST['mdp'];
+
+    $client = getClient($email,$mdp);
+    if((count($client))==0){
+        header("Location:login.php?erreur=1");
+    }
+    if($client['isAdmin']=="true"){
+        session_start();
+        $_SESSION['connect'] = "true";
+        $_SESSION['admin'] = "true";
+        header("Location:liste.php");
+    }
+    else{
+        session_start();
+        $_SESSION['connect'] = "true";
+        header("Location:acceuil.php");
+    }
 ?>

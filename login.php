@@ -1,3 +1,13 @@
+<?php
+    session_start();
+    session_destroy();
+    if(isset($_SESSION['connect'])){
+        if(isset($_SESSION['admin'])){
+            header("Location:liste.php");
+        }
+        header("Location:acceuil.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +20,7 @@
 <body>
 <div class="login">
         <div class="header-group">
-            <div><button class="btn-up btn">S'inscrire</button></div>
+            <div><a href="inscription.php"><button class="btn-up btn">S'inscrire</button></a></div>
             <div class="logo">
                 <div id="image"><img src="img/login/logo.png" alt="x"/></div>
                 <div id="entreprise">Agence Immo</div> 
